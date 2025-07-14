@@ -269,7 +269,7 @@
                     </div>
                     <div class="col-xxl-8 col-lg-8">
                         <div class="cinkes_contact_form mb-40">
-                            <form id="contactForm" onsubmit="handleContactForm(event)">
+                            <form id="contactForm" onsubmit="handleContactForm(event)" novalidate>
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <input type="text" id="contactName" name="name" placeholder="Ad Soyad" required>
@@ -281,7 +281,7 @@
                                         <input type="tel" id="contactPhone" name="phone" placeholder="+90 555 123 45 67" required>
                                     </div>
                                     <div class="col-xl-6">
-                                        <select name="subject" id="contactSubject" required>
+                                        <select name="subject" id="contactSubject">
                                             <option value="">Konu Seçin</option>
                                             <option value="Rezervasyon">Rezervasyon</option>
                                             <option value="Fiyat Bilgisi">Fiyat Bilgisi</option>

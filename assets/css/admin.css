@@ -3,7 +3,7 @@ button.side-admin-settings {
     right: 0;
     top: 220px;
     z-index: 9;
-    background: #f94d1c;
+    background: #8a2be2;
     color: #fff;
     border: 0;
     z-index: 99;
@@ -78,7 +78,7 @@ button.side-admin-settings {
 }
 
 .site-admin-demo-single a:hover h4 {
-    color: #f94d1c;
+    color: #8a2be2;
 }
 .admin-color-form {
     display: block;
@@ -102,7 +102,7 @@ button.cinkes-side-admin-panel-close-btn {
     position: absolute;
     right: 39px;
     top: 33px;
-    background: #f94d1c;
+    background: #8a2be2;
     border: 0;
     color: #fff;
 }
@@ -130,7 +130,7 @@ button.cinkes-side-admin-panel-close-btn {
     z-index: 99;
 }
 .cinkes-left-cursor button {
-    background: #f94d1c;
+    background: #8a2be2;
     color: #fff;
     border: 0;
     padding: 0 0;
@@ -141,7 +141,7 @@ button.cinkes-side-admin-panel-close-btn {
     border-bottom-right-radius: 10px;
 }
 .cinkes-cursor-admin-panel a {
-    background: #f94d1c;
+    background: #8a2be2;
     text-decoration: none;
     color: #fff;
     padding: 10px 13px;
@@ -169,7 +169,7 @@ button.cinkes-side-admin-panel-close-btn {
 }
 
 .side-admin-demo-select ul.nav li.nav-item button.active {
-    background: #f2652b;
+    background: #8a2be2;
 }
 .side-admin-demo-select ul.nav {
     margin-bottom: 30px;

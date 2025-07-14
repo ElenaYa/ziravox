@@ -6,8 +6,8 @@
         <title>Ziravox - Sayfa Bulunamadı | Antalya VR Kulübü</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <!-- Place favicon.png in the root directory -->
 
 		<!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <link rel="stylesheet" href="assets/css/swipper.css">
         <link rel="stylesheet" href="assets/css/admin.css">
-        <link rel="stylesheet" href="assets/dark.css">
+      
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
@@ -52,13 +52,13 @@
                             </div>
                             <div class="col-xxl-2 col-xl-3 col-lg-3">
                                 <div class="cinkes_single_contact_step cinkes_address_info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Yenigün, 1069. Sk. No:4, Antalya</span>
+                                   
+                                    
                                 </div>
                             </div>
                             <div class="col-xxl-2 col-xl-3 col-lg-2">
                                 <div class="cinkes_header_top_button text-end">
-                                    <a href="contact.html" class="cinkes_btn theme_bg black_hover">WhatsApp'tan Yaz</a>
+                                    <a href="javascript:void(0)" onclick="openFakeWhatsAppForm()" class="cinkes_btn theme_bg black_hover">WhatsApp'tan Yaz</a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                                             <li><a href="service.html">Oyunlar & Zonlar</a></li>
                                             <li><a href="pricing.html">Fiyatlar</a></li>
                                             <li><a href="contact.html">İletişim</a></li>
-                                            <li><a href="javascript:void()" class="hidden-xs rs-search" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="far fa-search"></i></a></li>
+                                           
                                         </ul>
                                     </nav>
                                 </div>
@@ -92,12 +92,8 @@
                             <div class="col-xxl-2 col-sm-6 order-lg-2 order-xxl-3 d-none d-lg-block">
                                 <div class="cinkes_header_quick_info_wrapper text-end pl-50">
                                     <div class="cinkes_header_quick_info text-start d-inline-block">
-                                        <div class="cinkes_quick_contact">
-                                            <span class="cinkes_quick_icon"><i class="fal fa-phone-plus"></i></span>
-                                            <div class="cinkes_quick_text d-inline-block">
-                                                <span>Bizi Arayın</span>
-                                                <a href="tel:+905551234567">+90 555 123 45 67</a>
-                                            </div>
+                                        <div>
+                                            <img src="assets/img/logo/logo2.png" alt="logo" style="width: 60px; height: 60px;">
                                         </div>
                                     </div>
                                 </div>
@@ -114,79 +110,7 @@
             </div>
         </header>
         <!-- header_area-end -->
-        <!-- side admin panel start -->
-        <div class="overlay"></div>
-        <div class="side-admin-panel">
-            <button class="side-admin-settings">
-                <i class="fas fa-cog rotate-animation"></i>
-            </button>
-            <div class="side-admin-panel-right">
-                <div class="side-admin-demo-select">
-                    <h4>Demo Seç</h4><button class="cinkes-side-admin-panel-close-btn"><i class="fal fa-times"></i></button>
-                        <ul class="nav" id="myTab" role="tablist">
-                          <li class="nav-item" role="presentation">
-                            <button class="active" id="home-tab" data-bs-toggle="tab" data-bs-target="#ltr" type="button" role="tab" aria-controls="ltr" aria-selected="true">LTR</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button id="profile-tab" data-bs-toggle="tab" data-bs-target="#rtl" type="button" role="tab" aria-controls="rtl" aria-selected="false">RTL</button>
-                          </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                          <div class="tab-pane fade show active" id="ltr" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="side-admin-demo-wrapper">
-                                <div class="site-admin-demo-single">
-                                    <a href="index.html"><img src="assets/img/admin/demo/ltr/home-1.png" alt="img not found">
-                                        <h4 class="demo-single-title">Ana Sayfa</h4>
-                                    </a>
-                                </div>
-                                <div class="site-admin-demo-single">
-                                    <a href="about.html"><img src="assets/img/admin/demo/ltr/about.png" alt="img not found">
-                                        <h4 class="demo-single-title">Hakkımızda</h4>
-                                    </a>
-                                </div>
-                                <div class="site-admin-demo-single">
-                                    <a href="service.html"><img src="assets/img/admin/demo/ltr/service.png" alt="img not found">
-                                        <h4 class="demo-single-title">Oyunlar</h4>
-                                    </a>
-                                </div>
-                                <div class="site-admin-demo-single">
-                                    <a href="pricing.html"><img src="assets/img/admin/demo/ltr/pricing.png" alt="img not found">
-                                        <h4 class="demo-single-title">Fiyatlar</h4>
-                                    </a>
-                                </div>
-                                <div class="site-admin-demo-single">
-                                    <a href="contact.html"><img src="assets/img/admin/demo/ltr/contact.png" alt="img not found">
-                                        <h4 class="demo-single-title">İletişim</h4>
-                                    </a>
-                                </div>
-                                <div class="site-admin-demo-single">
-                                    <a href="404.html"><img src="assets/img/admin/demo/ltr/404.png" alt="img not found">
-                                        <h4 class="demo-single-title">404</h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="admin-color-select mb-35">
-                        <h4 id="color" class="color">Renk Seç</h4>
-                        <div class="admin-color-select-form">
-                            <form action="#" class="admin-color-form">
-                                <input type="color" value="#f94d1c" id="admin-color-select" class="admin-color-select">
-                                <button class="admin-color-btn-reset">Rengi Sıfırla</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="admin-cursor-select">
-                        <h4 id="color2" class="color">İmleç Seç</h4>
-                        <div class="admin-cursor-button-list-1">
-                            <a href="#0" class="admin-cursor-default"><i class="fas fa-mouse-pointer"></i></a>
-                            <a href="#0" class="admin-cursor-magic"><i class="fas fa-mouse"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- side admin panel end -->
+   
         <!-- body_search_area-start -->
         <div class="modal fade search-modal show" id="searchModal" tabindex="-1" aria-modal="true" role="dialog">
             <button type="button" class="close" data-bs-dismiss="modal">
@@ -223,19 +147,14 @@
             <div class="contact-infos mt-40">
                 <div class="contact-list mobile_contact mb-40">
                     <h4>İletişim Bilgileri</h4>
-                    <span class="sidebar-address"><i class="fal fa-map-marker-alt"></i><span>Yenigün, 1069. Sk. No:4, 07310 Muratpaşa/Antalya</span> </span>
+                    <span class="sidebar-address"><i class="fal fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/wz5js8yKF3qVxXQS7" target="_blank">Yenigün, 1069. Sk. No:4, 07310 Muratpaşa/Antalya</a> </span>
 
-                    <a href="tel:+905551234567"><i class="fal fa-phone"></i><span>+90 555 123 45 67</span></a>
+                    <a href="tel:+905324567891"><i class="fal fa-phone"></i><span>+90 532 456 78 91</span></a>
                     <a href="mailto:info@ziravox.com" class="theme-3"><i class="far fa-envelope"></i><span><span>info@ziravox.com</span></span></a>   
 
                 </div>
 
-                <div class="top_social footer_social offset_social mt-40 mb-30">
-                    <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-                </div>
+              
             </div>
 
         </nav>
@@ -247,15 +166,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="cinkes_breadcrumb_content">
-                            <h4 class="cinkes_breadcrumb_title">404</h4>
-                            <nav class="breadcrumb-trail breadcrumbs">
-                                <ul>
-                                    <li class="trail-item"><a href="index.html">Ana Sayfa</a></li>
-                                    <li class="trail-item trail-end"><span>404</span></li>
-                                </ul>
-                            </nav>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -312,16 +223,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-sm-8">
-                                <div class="cinkes_footer_social_wrapper text-center text-sm-end">
-                                    <div class="cinkes_footer_social">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -354,12 +256,12 @@
                             </div>
                             <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                                 <div class="cinkes_footer_widget footer_widget_list mb-40">
-                                    <h4 class="cinkes_footer_title">Hizmetler</h4>
+                                    <h4 class="cinkes_footer_title">Yasal</h4>
                                     <ul>
-                                        <li><a href="service.html">VR Oyunları</a></li>
-                                        <li><a href="pricing.html">Grup Etkinlikleri</a></li>
-                                        <li><a href="pricing.html">Doğum Günü Partileri</a></li>
-                                        <li><a href="contact.html">Özel Etkinlikler</a></li>
+                                        <li><a href="privacy.html">Gizlilik Politikası</a></li>
+                                        <li><a href="terms.html">Kullanım Koşulları</a></li>
+                                        <li><a href="cookies.html">Çerez Politikası</a></li>
+                                      
                                     </ul>
                                 </div>
                             </div>
@@ -368,11 +270,15 @@
                                     <h4 class="cinkes_footer_title">Sorularınız mı var?</h4>
                                     <div class="cinkes_footer_contact_single">
                                         <h5 class="cinkes_footer_contact-single_title">Rezervasyon</h5>
-                                        <a href="tel:+905551234567">+90 555 123 45 67</a>
+                                        <a href="tel:+905324567891">+90 532 456 78 91</a>
                                     </div>
                                     <div class="cinkes_footer_contact_single">
                                         <h5 class="cinkes_footer_contact-single_title">Email Gönder</h5>
                                         <a href="mailto:info@ziravox.com">info@ziravox.com</a>
+                                    </div>
+                                    <div class="cinkes_footer_contact_single">
+                                        <h5 class="cinkes_footer_contact-single_title">Adres</h5>
+                                        <a href="https://maps.app.goo.gl/wz5js8yKF3qVxXQS7" target="_blank">Yenigün, 1069. Sk. No:4, 07310 Muratpaşa/Antalya</a>
                                     </div>
                                 </div>
                             </div>
@@ -384,18 +290,10 @@
             <div class="cinkes_footer_copyright_area pt-40 pb-40">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 text-center text-lg-start order-2 order-lg-1">
+                        <div class="col-xl-12 col-lg-12 text-center">
                             <p class="mb-0">Copyright © 2025 Ziravox. Tüm Hakları Saklıdır.</p>
                         </div>
-                        <div class="col-xl-6 col-lg-6 order-lg-2">
-                            <div class="cinkes_copyright_menu text-lg-end text-center">
-                                <ul>
-                                    <li><a href="about.html">Şartlar & Koşullar</a></li>
-                                    <li><a href="about.html">Gizlilik</a></li>
-                                    <li><a href="contact.html">Destek</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                     
                     </div>
                 </div>
             </div>
@@ -429,6 +327,96 @@
         <script src="assets/js/back-to-top.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/admin.js"></script>
-    
+        <script>
+            function openFakeWhatsAppForm() {
+                // Создаем модальное окно
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 9999;
+                `;
+                
+                // Создаем форму
+                const form = document.createElement('div');
+                form.style.cssText = `
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    width: 90%;
+                    max-width: 400px;
+                    text-align: center;
+                `;
+                
+                form.innerHTML = `
+                    <h3 style="color: #8a2be2; margin-bottom: 20px;">WhatsApp Rezervasyon</h3>
+                    <p style="margin-bottom: 20px; color: #666;">Bilgilerinizi girin, sizinle WhatsApp üzerinden iletişime geçeceğiz.</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <input type="text" id="whatsappName" placeholder="Adınız Soyadınız" 
+                               style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <input type="tel" id="whatsappPhone" placeholder="+90 555 123 45 67" 
+                               style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px;">
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <button onclick="submitWhatsAppForm()" 
+                                style="background: #8a2be2; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                            Gönder
+                        </button>
+                        <button onclick="closeWhatsAppForm()" 
+                                style="background: #666; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                            İptal
+                        </button>
+                    </div>
+                `;
+                
+                modal.appendChild(form);
+                document.body.appendChild(modal);
+                
+                // Фокус на первое поле
+                setTimeout(() => {
+                    document.getElementById('whatsappName').focus();
+                }, 100);
+            }
+            
+            function submitWhatsAppForm() {
+                const name = document.getElementById('whatsappName').value.trim();
+                const phone = document.getElementById('whatsappPhone').value.trim();
+                
+                if (!name || !phone) {
+                    alert('Lütfen adınızı ve telefon numaranızı girin.');
+                    return;
+                }
+                
+                // Здесь можно добавить отправку данных на сервер
+                alert(`Teşekkürler ${name}! En kısa sürede ${phone} numarasından sizinle iletişime geçeceğiz.`);
+                closeWhatsAppForm();
+            }
+            
+            function closeWhatsAppForm() {
+                const modal = document.querySelector('div[style*="position: fixed"]');
+                if (modal) {
+                    modal.remove();
+                }
+            }
+            
+            // Закрытие по клику вне формы
+            document.addEventListener('click', function(e) {
+                if (e.target.style && e.target.style.position === 'fixed') {
+                    closeWhatsAppForm();
+                }
+            });
+        </script>
     </body>
 </html>

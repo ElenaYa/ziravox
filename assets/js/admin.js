@@ -27,7 +27,7 @@ if (colorDomSelect) {
     });
 
     // Load from localStorage
-    const colorFormLocalStorage = localStorage.getItem('Pcolor') || '#F94D1C';
+    const colorFormLocalStorage = localStorage.getItem('Pcolor') || '#8a2be2';
     colorDomSelect.value = colorFormLocalStorage;
 
     // Apply stored color styles

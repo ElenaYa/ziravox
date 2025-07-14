@@ -44,7 +44,7 @@ CSS INDEX
 01. common
 ******************************************************* 
 *************************************************************** */
-@import url("../../../../../css2");
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -1807,7 +1807,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 200%;
   height: 100%;
   content: "";
-  background-color: #f94d1c;
   z-index: -1;
 }
 .cinkes_logo img {
@@ -1822,11 +1821,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   left: -100%;
   top: 0;
   width: 100%;
-  height: 100%;
-  background-color: #f94d1c;
+  height: 100%; 
   content: "";
   z-index: -1;
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .cinkes_logo_bg_before:before {
     display: none;
@@ -1837,7 +1836,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   height: 60px;
   line-height: 60px;
   padding: 0 30px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
 }
 
@@ -1872,7 +1871,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-color: #fff;
   box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
   padding: 15px 0;
-  border-top: 5px solid #f94d1c;
+  border-top: 5px solid #8a2be2;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
@@ -1893,7 +1892,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 10px;
   height: 2px;
   content: "";
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
@@ -1924,7 +1923,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   content: "\f068";
   font-family: "Font Awesome 5 Pro";
   font-weight: 500;
-  color: #f94d1c;
+  color: #8a2be2;
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
@@ -1938,7 +1937,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   visibility: visible;
 }
 .cinkes_main_menu li:hover > a {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .cinkes_main_menu li:hover ul.sub-menu {
   opacity: 1;
@@ -2062,7 +2061,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 .cinkes_quick_text a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .header-transparent.sticky .cinkes_quick_text span {
@@ -2072,7 +2071,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #1a213e;
 }
 .header-transparent.sticky .cinkes_quick_text a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .header-transparent.sticky .cinkes_quick_icon {
   color: #1a213e;
@@ -2187,7 +2186,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-color: transparent;
   font-size: 30px;
   line-height: 1;
-  color: #F94D1C;
+  color: #8a2be2;
   transition: 0.3s;
 }
 
@@ -2195,7 +2194,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #fff;
 }
 .header-transparent:is(.sticky) #nav-expander {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 @media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2212,7 +2211,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 #nav-close:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 body .search-modal {
@@ -2373,7 +2372,7 @@ body.nav-expanded .offwrap {
 }
 
 .header-transparent .cinkes_main_menu li:hover > a {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .header-transparent .cinkes_menu li.has-menu-children::before {
@@ -2389,7 +2388,7 @@ body.nav-expanded .offwrap {
 }
 
 .header-transparent.sticky .cinkes_main_menu li:hover > a {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .header-transparent .cinkes_quick_icon {
@@ -2405,7 +2404,7 @@ body.nav-expanded .offwrap {
 }
 
 .header-transparent .cinkes_quick_text a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 /*
@@ -2674,7 +2673,7 @@ body.nav-expanded .offwrap {
 ******************************************************* 
 *************************************************************** */
 .theme_clr {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 @media (max-width: 767px) {
@@ -2712,7 +2711,7 @@ body.nav-expanded .offwrap {
   width: 40px;
   content: "";
   height: 3px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .cinkes_sub_title:after {
@@ -2722,11 +2721,11 @@ body.nav-expanded .offwrap {
   width: 40px;
   content: "";
   height: 3px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .theme_clr:before {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 /*
@@ -2753,7 +2752,7 @@ body.nav-expanded .offwrap {
 .slide_btn {
   height: 80px;
   border-radius: 50px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   display: inline-block;
   line-height: 80px;
   padding: 0 45px;
@@ -2775,7 +2774,7 @@ body.nav-expanded .offwrap {
   display: inline-block;
   height: 65px;
   line-height: 65px;
-  background-color: #F94D1C;
+  background-color: #8a2be2;
   color: #fff;
   padding: 0 50px;
   border-radius: 5px;
@@ -2902,7 +2901,7 @@ body.nav-expanded .offwrap {
 
 .cinkes_services_fullwidth_icon {
   margin-right: 30px;
-  color: #f94d1c;
+  color: #8a2be2;
   line-height: 1;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -2944,7 +2943,7 @@ body.nav-expanded .offwrap {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #f94d1c;
+  color: #8a2be2;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -2973,7 +2972,7 @@ body.nav-expanded .offwrap {
 
 .cinkes_services_btn {
   height: 70px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   line-height: 70px;
   padding: 0 25px;
   display: inline-block;
@@ -3036,7 +3035,7 @@ body.nav-expanded .offwrap {
   font-size: 35px;
   font-weight: 700;
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   display: inline-block;
   text-align: center;
   flex: 0 0 100px;
@@ -3134,7 +3133,7 @@ body.nav-expanded .offwrap {
   font-size: 60px;
   margin-bottom: 25px;
   transition: all 0.3s;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_fullwidth_seervice_icon_text {
@@ -3147,7 +3146,7 @@ body.nav-expanded .offwrap {
 }
 
 .cinkes_fullwidth_services_icon_box:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   box-shadow: 0 13px 29px rgba(0, 0, 0, 0.01);
 }
 
@@ -3185,7 +3184,7 @@ body.nav-expanded .offwrap {
   text-decoration: none;
 }
 .cinkes_services_single_title a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_services_single_icon {
@@ -3196,7 +3195,7 @@ body.nav-expanded .offwrap {
   line-height: 175px;
   border-radius: 50%;
   background-color: #f1f3f2;
-  color: #f94d1c;
+  color: #8a2be2;
   transition: 0.3s;
   background-repeat: no-repeat;
   background-position: center;
@@ -3229,7 +3228,7 @@ body.nav-expanded .offwrap {
 }
 .cinkes_services_single:hover .cinkes_services_single_icon {
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 /* service 2 */
@@ -3282,7 +3281,7 @@ body.nav-expanded .offwrap {
   display: flex;
   align-items: center;
   padding: 60px 40px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   position: relative;
   flex-wrap: wrap;
   padding-bottom: 35px;
@@ -3314,7 +3313,7 @@ body.nav-expanded .offwrap {
 
 .cinkes_support_item i {
   font-size: 80px;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_support_item_text {
@@ -3363,7 +3362,7 @@ body.nav-expanded .offwrap {
   margin-bottom: 35px;
 }
 .cinkes_service2_item_icon i {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_service2_item_icon:before {
@@ -3392,7 +3391,7 @@ body.nav-expanded .offwrap {
   text-decoration: none;
 }
 .cinkes_service2_item_title a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 /*  Service Details  */
@@ -3411,7 +3410,7 @@ body.nav-expanded .offwrap {
   top: 20px;
   content: "\f007";
   font-family: "Font Awesome 5 Pro";
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .sidebar_input input {
   width: 100%;
@@ -3440,7 +3439,7 @@ body.nav-expanded .offwrap {
   top: 20px;
   content: "\f2b6";
   font-family: "Font Awesome 5 Pro";
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .sidebar_send_btn {
@@ -3448,7 +3447,7 @@ body.nav-expanded .offwrap {
   border: 0;
   line-height: 60px;
   background-color: red;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   padding: 0px 35px;
   border-radius: 5px;
   color: #fff;
@@ -3475,7 +3474,7 @@ body.nav-expanded .offwrap {
   margin-bottom: 20px;
 }
 .cinkes_sidebar_download a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .cinkes_sidebar_download a span {
   float: right;
@@ -3519,7 +3518,7 @@ body.nav-expanded .offwrap {
   height: 90px;
   border-radius: 50%;
   line-height: 90px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   text-align: center;
   color: #fff;
   font-size: 18px;
@@ -3593,9 +3592,9 @@ body.nav-expanded .offwrap {
   border: 1px solid #dbdddf;
 }
 .details_tab_wrapper ul li button:is(.active) {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
-  border-color: #f94d1c;
+  border-color: #8a2be2;
 }
 
 .sd_tab_title {
@@ -3709,7 +3708,7 @@ body.nav-expanded .offwrap {
 .cinkes_video_btn {
   width: 85px;
   height: 70px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   display: inline-block;
   text-align: center;
   line-height: 70px;
@@ -3761,7 +3760,7 @@ body.nav-expanded .offwrap {
   font-size: 20px;
   font-weight: 500;
   position: relative;
-  color: #f94d1c;
+  color: #8a2be2;
   display: inline-block;
 }
 @media (max-width: 767px) {
@@ -3853,7 +3852,7 @@ body.nav-expanded .offwrap {
   }
 }
 .cinkes_list1_wrapper ul li > i {
-  color: #f94d1c;
+  color: #8a2be2;
   font-size: 18px;
   display: inline-block;
   margin-right: 20px;
@@ -4213,7 +4212,7 @@ body.nav-expanded .offwrap {
 }
 .cinkes_working_process_step_icon i {
   font-size: 55px;
-  color: #F94D1C;
+  color: #8a2be2;
   width: 115px;
   height: 115px;
   background-color: #111;
@@ -4228,7 +4227,7 @@ body.nav-expanded .offwrap {
   transition: 0.3s;
 }
 .cinkes_working_process_step_icon a:hover i {
-  background-color: #F94D1C;
+  background-color: #8a2be2;
   color: #fff;
 }
 
@@ -4259,7 +4258,7 @@ body.nav-expanded .offwrap {
   text-decoration: none;
 }
 .cinkes_working_process_step_title:hover a {
-  color: #F94D1C;
+  color: #8a2be2;
 }
 
 .cinkes_working_process_step_text p {
@@ -4309,14 +4308,14 @@ body.nav-expanded .offwrap {
   width: 0;
   height: 100%;
   content: "";
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   z-index: -1;
   transition: 0.4s;
 }
 
 .cinkes_service_work_icon i {
   font-size: 60px;
-  color: #f94d1c;
+  color: #8a2be2;
   display: inline-block;
   transition: 0.4s;
 }
@@ -4426,7 +4425,7 @@ body.nav-expanded .offwrap {
 .swiper-slide.cinkes_project_slide.swiper-slide-active .cinkes_slide_content a {
   display: inline-block;
   padding: 25px 50px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
@@ -4469,7 +4468,7 @@ body.nav-expanded .offwrap {
   bottom: -2px;
   width: 100%;
   height: 3px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   content: "";
   z-index: 1;
   text-align: center;
@@ -4480,7 +4479,7 @@ body.nav-expanded .offwrap {
 }
 .cinkes_projects_button li button:is(.active) {
   position: relative;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .cinkes_projects_button li button:is(.active):before {
   opacity: 1;
@@ -4524,7 +4523,7 @@ body.nav-expanded .offwrap {
   transform: translateY(calc(-50% - 42px));
 }
 .cinkes_projects_navigation div:hover {
-  background-color: #F94D1C;
+  background-color: #8a2be2;
   color: #fff;
 }
 .cinkes_projects_navigation div:is(.cinkes_projects_prev) {
@@ -4598,7 +4597,7 @@ span.cinkes_project_details_meta_subtext {
 
 .cinkes_project_details_meta_icon i {
   font-size: 35px;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_project_details_meta_icon {
@@ -4616,7 +4615,7 @@ span.cinkes_project_details_meta_subtext {
   text-decoration: none;
 }
 .cinkes_project_details_meta_text a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_project-details_meta-single:not(:last-child) {
@@ -4672,7 +4671,7 @@ span.cinkes_project_details_meta_subtext {
 }
 
 .cinkes_project_details_prev:hover, .cinkes_project_details_next:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_project_details_prev i.fal {
@@ -4778,7 +4777,7 @@ span.cinkes_project_details_meta_subtext {
   display: inline-block;
   line-height: 70px;
   text-align: center;
-  background: #f94d1c;
+  background: #8a2be2;
   color: #fff;
   font-size: 26px;
   border-radius: 5px;
@@ -4823,7 +4822,7 @@ span.cinkes_project_details_meta_subtext {
 }
 
 .cinkes-single-recent-project-content-title-1 a:Hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .recent-project-active-1 .swiper-slide.swiper-slide-active .cinkes-single-recent-project-content-wrapper-1 {
@@ -4890,7 +4889,7 @@ span.cinkes_project_details_meta_subtext {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   padding: 5px 15px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -4916,7 +4915,7 @@ span.cinkes_project_details_meta_subtext {
   }
 }
 .item_text:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .portfolio_item_inner_text {
@@ -4973,9 +4972,9 @@ span.cinkes_project_details_meta_subtext {
   height: 60px;
   line-height: 60px;
   display: inline-block;
-  border: 1px solid #f94d1c;
+  border: 1px solid #8a2be2;
   text-align: center;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
   border-radius: 5px;
   opacity: 0;
@@ -4984,8 +4983,8 @@ span.cinkes_project_details_meta_subtext {
 }
 .item_img > i:hover {
   background-color: transparent;
-  border-color: #f94d1c;
-  color: #f94d1c;
+  border-color: #8a2be2;
+  color: #8a2be2;
 }
 
 .portfolio_nav button {
@@ -4998,11 +4997,11 @@ span.cinkes_project_details_meta_subtext {
   margin-right: 10px;
 }
 .portfolio_nav button:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
 }
 .portfolio_nav button.active {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
 }
 
@@ -5065,7 +5064,7 @@ span.cinkes_project_details_meta_subtext {
   text-decoration: none;
 }
 .cinkes_project_media_description_details ul li a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .cinkes_project_media_description_details ul li:not(:last-child) {
   margin-bottom: 5px;
@@ -5085,8 +5084,8 @@ span.cinkes_project_details_meta_subtext {
   border-radius: 3px;
 }
 .cinkes_project_media_description_details_share a:hover {
-  background-color: #f94d1c;
-  border-color: #f94d1c;
+  background-color: #8a2be2;
+  border-color: #8a2be2;
 }
 
 .cinkes_video_thumb_sub_title {
@@ -5214,7 +5213,7 @@ span.cinkes_project_details_meta_subtext {
   text-decoration: none;
 }
 .cinkes_team_member_name a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_team_member_designation {
@@ -5236,7 +5235,7 @@ span.cinkes_project_details_meta_subtext {
 }
 
 .cinkes_team_member_social_action a:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
 }
 
@@ -5306,7 +5305,7 @@ span.cinkes_project_details_meta_subtext {
 
 .cinkes_team_member_name.cinkes_team_details_name {
   font-size: 40px;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 @media (max-width: 767px) {
   .cinkes_team_member_name.cinkes_team_details_name {
@@ -5356,7 +5355,7 @@ span.cinkes_project_details_meta_subtext {
 }
 
 .team_person_info a:hover {
-  color: #F94D1C;
+  color: #8a2be2;
 }
 
 .cinkes_help_title {
@@ -5401,7 +5400,7 @@ span.cinkes_project_details_meta_subtext {
 .cinkes_help_feature_single_icon {
   height: 80px;
   margin-right: 25px;
-  background-color: #F94D1C;
+  background-color: #8a2be2;
   text-align: center;
   line-height: 80px;
   color: #fff;
@@ -5595,7 +5594,7 @@ span.cinkes_project_details_meta_subtext {
 
 .cinkes_pricing_plan_price sup {
   font-size: 25px;
-  color: #f94d1c;
+  color: #8a2be2;
   transform: translateY(-5px);
   display: inline-block;
 }
@@ -5655,7 +5654,7 @@ span.cinkes_project_details_meta_subtext {
 
 .cinkes_pricing_plan_action_btn:hover {
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .cinkes_pricing_plan_action_btn:focus {
@@ -5667,11 +5666,11 @@ span.cinkes_project_details_meta_subtext {
 }
 
 .active .pricing_tag {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .active .cinkes_pricing_plan_action_btn {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 /*
@@ -5701,7 +5700,7 @@ span.cinkes_project_details_meta_subtext {
   content: "";
   width: 10px;
   height: 10px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   border-radius: 50%;
 }
 
@@ -5716,19 +5715,19 @@ span.cinkes_project_details_meta_subtext {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .cinkes_counterup_wrapper .row > *:nth-child(1) .cinkes_counterup_single:after {
     width: calc(100% - 180px);
-    background-color: #f94d1c;
+    background-color: #8a2be2;
   }
 }
 @media (max-width: 767px) {
   .cinkes_counterup_wrapper .row > *:nth-child(1) .cinkes_counterup_single:after {
     width: 180px;
-    background-color: #f94d1c;
+    background-color: #8a2be2;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .cinkes_counterup_wrapper .row > *:nth-child(1) .cinkes_counterup_single:after {
     width: calc(100% - 180px);
-    background-color: #f94d1c;
+    background-color: #8a2be2;
   }
 }
 @media (max-width: 767px) {
@@ -5744,13 +5743,13 @@ span.cinkes_project_details_meta_subtext {
 @media (max-width: 767px) {
   .cinkes_counterup_wrapper .row > *:nth-child(2) .cinkes_counterup_single:after {
     width: 180px;
-    background-color: #f94d1c;
+    background-color: #8a2be2;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .cinkes_counterup_wrapper .row > *:nth-child(2) .cinkes_counterup_single:after {
     width: calc(100% - 180px);
-    background-color: #f94d1c;
+    background-color: #8a2be2;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -5761,7 +5760,7 @@ span.cinkes_project_details_meta_subtext {
 @media (max-width: 767px) {
   .cinkes_counterup_wrapper .row > *:nth-child(3) .cinkes_counterup_single:after {
     width: 180px;
-    background-color: #f94d1c;
+    background-color: #8a2be2;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -5785,7 +5784,7 @@ span.cinkes_project_details_meta_subtext {
   left: 50%;
   bottom: 0;
   width: 0;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   height: 5px;
   content: "";
   transform: translateX(-50%);
@@ -5800,7 +5799,7 @@ span.cinkes_project_details_meta_subtext {
 .cinkes_count_number {
   font-size: 38px;
   font-weight: 500;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_count_text {
@@ -5900,7 +5899,7 @@ span.cinkes_project_details_meta_subtext {
   color: #fff;
   width: 90px;
   height: 90px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   line-height: 90px;
   text-align: center;
   border-radius: 50%;
@@ -6020,7 +6019,7 @@ span.cinkes_project_details_meta_subtext {
 
 .cinkes_free_consultaion_wrapper {
   padding: 60px 50px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   border-radius: 5px;
 }
 @media (max-width: 767px) {
@@ -6180,7 +6179,7 @@ span.cinkes_project_details_meta_subtext {
 .cinkes_testimonial_rating a i {
   font-size: 14px;
   font-weight: 900;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_testimonial_rating {
@@ -6190,7 +6189,7 @@ span.cinkes_project_details_meta_subtext {
 .cinkes_testimonial_customer_name {
   font-size: 20px;
   font-weight: 500;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_testimonial_customer_name .cinkes_customer_review {
@@ -6240,7 +6239,7 @@ span.cinkes_project_details_meta_subtext {
 }
 
 .cinkes_testimonial_message_navigation div:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_testimonial_pagination.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -6257,11 +6256,11 @@ span.cinkes_project_details_meta_subtext {
 }
 
 .cinkes_testimonial_pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  outline: 2px solid #f94d1c;
+  outline: 2px solid #8a2be2;
   border: 6px solid #fff;
   width: 50px;
   height: 15px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   border-radius: 50px;
 }
 
@@ -6400,7 +6399,7 @@ span.cinkes_project_details_meta_subtext {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   text-align: center;
   color: #fff;
   transition: 0.3s;
@@ -6529,7 +6528,7 @@ span.cinkes_project_details_meta_subtext {
   width: 85px;
   height: 85px;
   border-radius: 50%;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -6555,7 +6554,7 @@ span.cinkes_project_details_meta_subtext {
 
 .cinkes_blog_meta i {
   margin-right: 6px;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_blog_meta {
@@ -6565,7 +6564,7 @@ span.cinkes_project_details_meta_subtext {
 }
 
 a.cinkes_blog_meta:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_blog_meta:not(:last-child) {
@@ -6574,7 +6573,7 @@ a.cinkes_blog_meta:hover {
 
 .cinkes_latest_blog_single_meta_author a {
   text-decoration: none;
-  color: #f94d1c;
+  color: #8a2be2;
   font-weight: 500;
 }
 
@@ -6588,7 +6587,7 @@ a.cinkes_blog_meta:hover {
   top: 50%;
   transform: translateY(-50%);
   content: "";
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   width: 5px;
   height: 1px;
 }
@@ -6619,7 +6618,7 @@ a.cinkes_blog_meta:hover {
 }
 
 .cinkes_latest_blog_single_content_title:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_blog_meta {
@@ -6649,11 +6648,11 @@ a.cinkes_blog_meta:hover {
 }
 
 .cinkes_blog_content_meta a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_blog_content_meta span i, .cinkes_blog_content_meta a i {
-  color: #f94d1c;
+  color: #8a2be2;
   display: inline-block;
   margin-right: 8px;
 }
@@ -6716,8 +6715,8 @@ a.cinkes_blog_meta:hover {
 
 .cinkes_blog_content_tags a:hover {
   color: #fff;
-  background-color: #f94d1c;
-  border-color: #f94d1c;
+  background-color: #8a2be2;
+  border-color: #8a2be2;
 }
 
 .cinkes_blog_content_tags a:last-child {
@@ -6741,7 +6740,7 @@ a.cinkes_blog_meta:hover {
 
 .cinkes_blog_content_share a:hover {
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .cinkes_blog_content_author {
@@ -6803,7 +6802,7 @@ a.cinkes_blog_meta:hover {
 }
 
 .cinkes_blog_content_author_social a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .comments_title {
@@ -6866,7 +6865,7 @@ a.cinkes_blog_meta:hover {
   text-decoration: none;
 }
 .comment_title a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .comment_list_img {
   margin-right: 30px;
@@ -6915,7 +6914,7 @@ a.cinkes_blog_meta:hover {
   font-size: 15px;
   vertical-align: middle;
   text-decoration: none;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .contact_btn.w_100 {
@@ -6949,7 +6948,7 @@ a.cinkes_blog_meta:hover {
   height: 60px;
   line-height: 60px;
   border: 0;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
   font-size: 15px;
   display: inline-block;
@@ -7008,7 +7007,7 @@ a.cinkes_blog_meta:hover {
   bottom: 0;
   width: 90px;
   content: "";
-  border-bottom: 4px solid #f94d1c;
+  border-bottom: 4px solid #8a2be2;
   z-index: 1;
 }
 
@@ -7039,7 +7038,7 @@ a.cinkes_blog_meta:hover {
   width: 60px;
   background-color: transparent;
   border: 0;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 .cinkes_sidebar-search button[type=submit] i {
   font-weight: 500;
@@ -7068,7 +7067,7 @@ a.cinkes_blog_meta:hover {
 }
 
 .cinkes_sidebar-category ul li a:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
 }
 
@@ -7116,7 +7115,7 @@ a.cinkes_blog_meta:hover {
   text-decoration: none;
 }
 .cinkes_sidebar-latestnews-title a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_sidebar-latestnews-date {
@@ -7171,7 +7170,7 @@ a.cinkes_blog_meta:hover {
 .cinkes_add_btn {
   height: 60px;
   line-height: 60px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   display: inline-block;
   padding: 0 40px;
   border-radius: 5px;
@@ -7201,7 +7200,7 @@ a.cinkes_blog_meta:hover {
 }
 .cinkes_sidebar-cloudtag a:hover {
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .blog_meta {
@@ -7234,11 +7233,11 @@ a.cinkes_blog_meta:hover {
 }
 
 .blog_meta a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .meta_item i {
-  color: #f94d1c;
+  color: #8a2be2;
   margin-right: 8px;
   font-size: 16px;
   transform: translateY(-2px);
@@ -7251,7 +7250,7 @@ a.cinkes_blog_meta:hover {
   top: 50%;
   width: 7px;
   height: 7px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   content: "";
   border-radius: 50%;
   transform: translateY(-50%);
@@ -7278,7 +7277,7 @@ a.cinkes_blog_meta:hover {
 }
 
 .blog_user_name:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .blog_title {
@@ -7315,14 +7314,14 @@ a.cinkes_blog_meta:hover {
 }
 
 .blog_title a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .blog_btn {
   height: 60px;
   line-height: 60px;
   padding: 0 45px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   display: inline-block;
   border-radius: 5px;
   color: #fff;
@@ -7402,7 +7401,7 @@ a.cinkes_blog_meta:hover {
 }
 .video_presentation_btn:hover {
   background-color: #f9f9f9;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_video1_btn {
@@ -7411,7 +7410,7 @@ a.cinkes_blog_meta:hover {
 }
 
 .video_icon:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 .video_icon:hover i {
   color: #fff;
@@ -7452,7 +7451,7 @@ a.cinkes_blog_meta:hover {
 
 .video_icon i {
   font-weight: 700;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .blog_single_quote_content {
@@ -7464,7 +7463,7 @@ a.cinkes_blog_meta:hover {
 
 .blog_single_quote_content i {
   font-size: 80px;
-  color: #f94d1c;
+  color: #8a2be2;
   position: absolute;
 }
 
@@ -7513,7 +7512,7 @@ blockquote p {
   top: 50%;
   width: 45%;
   height: 2px;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   content: "";
   transform: translateY(-50%);
 }
@@ -7541,12 +7540,12 @@ blockquote p {
 }
 
 .blog_pagination ul li .page-numbers:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
 }
 
 .blog_pagination ul li .current {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #fff;
 }
 
@@ -7660,7 +7659,7 @@ blockquote p {
   text-decoration: none;
 }
 .cinkes_blog2_meta a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_blog2_meta:not(:last-child) {
@@ -7719,7 +7718,7 @@ blockquote p {
   text-decoration: none;
 }
 .cinkes_blog2_single_content_title a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 /*
@@ -7880,7 +7879,7 @@ blockquote p {
 }
 
 .breadcrumbs ul li a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 /*
@@ -7905,7 +7904,7 @@ blockquote p {
 
 .cinkes_contact_single_icon i {
   font-size: 50px;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 @media (max-width: 767px) {
   .cinkes_contact_single_icon i {
@@ -7952,7 +7951,7 @@ blockquote p {
 }
 
 .cinkes_contact_single_text a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_contact_form input {
@@ -7980,7 +7979,7 @@ blockquote p {
 .cinkes_submit_btn {
   font-size: 16px;
   border: 0;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   height: 60px;
   color: #fff;
   border-radius: 5px;
@@ -8114,7 +8113,7 @@ blockquote p {
 *************************************************************** */
 .cinkes-404-title {
   font-size: 170px;
-  color: #f94d1c;
+  color: #8a2be2;
   line-height: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8162,7 +8161,7 @@ blockquote p {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   display: inline-block;
   padding: 0 45px;
   height: 65px;
@@ -8173,9 +8172,9 @@ blockquote p {
 }
 
 .error-button:hover {
-  border-color: #f94d1c;
+  border-color: #8a2be2;
   background-color: transparent;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 /*
@@ -8227,7 +8226,7 @@ blockquote p {
   fill: none;
 }
 .progress-wrap svg.progress-circle path {
-  stroke: #F94D1C;
+  stroke: #8a2be2;
   stroke-width: 4;
   box-sizing: border-box;
   -webkit-transition: all 0.3s linear 0s;
@@ -8301,7 +8300,7 @@ blockquote p {
 }
 
 .cinkes_footer_social a:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .cinkes_footer_widget_area {
@@ -8344,7 +8343,7 @@ blockquote p {
   height: 66px;
   width: 60px;
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   position: absolute;
   right: 0;
   border-radius: 0 5px 5px 0;
@@ -8377,7 +8376,7 @@ blockquote p {
 
 .cinkes_footer_contact-single_title {
   font-size: 16px;
-  color: #f94d1c;
+  color: #8a2be2;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -8427,7 +8426,7 @@ blockquote p {
 }
 
 .cinkes_copyright_menu ul li a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .cinkes_footer_copyright_area p {
@@ -8436,7 +8435,7 @@ blockquote p {
 
 .cinkes_footer_copyright_area p a {
   text-decoration: none;
-  color: #f94d1c;
+  color: #8a2be2;
   font-weight: 700;
 }
 
@@ -8568,13 +8567,13 @@ blockquote p {
 }
 
 .dark_mode .active .cinkes_pricing_plan_action_btn {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #ffffff;
 }
 
 .dark_mode .cinkes_pricing_plan_action_btn:hover {
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .dark_mode .team_person_info a, .team_person_info span {
@@ -8694,7 +8693,7 @@ blockquote p {
 }
 
 .dark_mode .cinkes_sidebar_download a:hover {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .dark_mode .cinkes_faq_single_item {
@@ -8742,7 +8741,7 @@ blockquote p {
 .dark_mode .cinkes_fullwidth_features_single:hover span.cinkes_fullwidth_number {
   background-color: #fff;
   transition: 0.5s;
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .dark_mode .cinkes_about_title {
@@ -8767,7 +8766,7 @@ blockquote p {
 }
 
 .dark_mode .cinkes_pricing_plan_price {
-  color: #f94d1c;
+  color: #8a2be2;
 }
 
 .dark_mode .cinkes_pricing_plan_wrapper {
@@ -9025,7 +9024,7 @@ blockquote p {
 }
 
 .dark_mode .cinkes_progress_single .progress-bar {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .dark_mode .bg_white {
@@ -9178,7 +9177,7 @@ blockquote p {
 
 .dark_mode .portfolio_nav button.active {
   color: #fff;
-  background-color: #f94d1c;
+  background-color: #8a2be2;
 }
 
 .dark_mode .portfolio_area.filter-wrapper.p-rel.pt-120.pb-120 {
@@ -9282,7 +9281,7 @@ blockquote p {
 }
 
 .dark_mode .cinkes_team_member_social_action a:hover {
-  background-color: #f94d1c;
+  background-color: #8a2be2;
   color: #ffffff;
 }
 
@@ -9324,7 +9323,7 @@ blockquote p {
   cursor: pointer;
 }
 .cinkes-dark-light-view-box.has-clicked {
-  background: #f94d1c;
+  background: #8a2be2;
 }
 .cinkes-dark-light-view-box .cinkes-dark-light-view-toogle-dot {
   position: absolute;
@@ -9373,5 +9372,12 @@ blockquote p {
 .dark_mode .cinkes_about_content_wrapper .cinkes_about_title {
   color: #fff;
 }
+:root {
+  --bs-orange: #8a2be2 !important;
+}
+.cinkes_breadcrumb_area {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-/*# sourceMappingURL=main.css.map */

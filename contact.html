@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <link rel="stylesheet" href="assets/css/swipper.css">
         <link rel="stylesheet" href="assets/css/admin.css">
-        <link rel="stylesheet" href="assets/dark.css">
+     
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     
@@ -231,15 +231,14 @@
                                 <span class="cinkes_contact_single_icon"><i class="fas fa-map-marker-alt"></i></span>
                                 <div class="cinkes_contact_single_text cinkes_contact_single_address_text">
                                     <h4 class="cinkes_contact_single_title">Adres</h4>
-                                    <p class="mb-0">Yenigün, 1069. Sk. No:4, <br> 07310 Muratpaşa/Antalya</p>
+                                    <p class="mb-0"><a href="https://maps.app.goo.gl/wz5js8yKF3qVxXQS7" target="_blank">Yenigün, 1069. Sk. No:4, <br> 07310 Muratpaşa/Antalya</a></p>
                                 </div>
                             </div>
                             <div class="cinkes_contact-single_info mb-40">
                                 <span class="cinkes_contact_single_icon"><i class="fad fa-phone-alt"></i></span>
                                 <div class="cinkes_contact_single_text cinkes_contact_single_phone_text">
                                     <h4 class="cinkes_contact_single_title">Telefon</h4>
-                                    <a href="tel:+905551234567">+90 555 123 45 67</a> <br>
-                                    <a href="tel:+902422345678">+90 242 234 56 78</a> 
+                                    <a href="tel:+905324567891">+90 532 456 78 91</a>
                                 </div>
                             </div>
                             <div class="cinkes_contact-single_info mb-40">
@@ -247,7 +246,7 @@
                                 <div class="cinkes_contact_single_text cinkes_contact_single_email_text">
                                     <h4 class="cinkes_contact_single_title">Email</h4>
                                     <a href="mailto:info@ziravox.com">info@ziravox.com</a> <br>
-                                    <a href="mailto:rezervasyon@ziravox.com">rezervasyon@ziravox.com</a> 
+                                
                                 </div>
                             </div>
                             <div class="cinkes_contact-single_info mb-40">
@@ -270,19 +269,20 @@
                     </div>
                     <div class="col-xxl-8 col-lg-8">
                         <div class="cinkes_contact_form mb-40">
-                            <form action="#">
+                            <form id="contactForm" onsubmit="handleContactForm(event)">
                                 <div class="row">
                                     <div class="col-xl-6">
-                                        <input type="text" placeholder="Ad Soyad">
+                                        <input type="text" id="contactName" name="name" placeholder="Ad Soyad" required>
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="email" placeholder="Email Adresiniz">
+                                        <input type="email" id="contactEmail" name="email" placeholder="Email Adresiniz" required>
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="tel" placeholder="Telefon">
+                                        <input type="tel" id="contactPhone" name="phone" placeholder="+90 555 123 45 67" required>
                                     </div>
                                     <div class="col-xl-6">
-                                        <select name="subject" id="subject">
+                                        <select name="subject" id="contactSubject" required>
+                                            <option value="">Konu Seçin</option>
                                             <option value="Rezervasyon">Rezervasyon</option>
                                             <option value="Fiyat Bilgisi">Fiyat Bilgisi</option>
                                             <option value="Grup Etkinliği">Grup Etkinliği</option>
@@ -291,7 +291,7 @@
                                         </select>
                                     </div>
                                     <div class="col-xl-12">
-                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+                                        <textarea name="message" id="contactMessage" cols="30" rows="10" placeholder="Mesajınız" required></textarea>
                                         <button type="submit" class="cinkes_submit_btn i_right">Mesaj Gönder <i class="fal fa-plus"></i></button>
                                     </div>
                                     
@@ -315,11 +315,7 @@
     
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="cinkes_project_button mb-30 text-lg-end">
-                                <a href="contact.html" class="cinkes_about_btn radius_5">Soru Sorun</a>
-                            </div>
-                        </div>
+                     
                     </div>
                     <div class="row">
                         <div class="col-xl-6 col-lg-6">
@@ -684,6 +680,100 @@
                     closeWhatsAppForm();
                 }
             });
+            
+            // Обработка контактной формы
+            function handleContactForm(event) {
+                event.preventDefault();
+                
+                const name = document.getElementById('contactName').value.trim();
+                const email = document.getElementById('contactEmail').value.trim();
+                const phone = document.getElementById('contactPhone').value.trim();
+                const subject = document.getElementById('contactSubject').value;
+                const message = document.getElementById('contactMessage').value.trim();
+                
+                // Валидация
+                if (!name || !email || !phone || !subject || !message) {
+                    showPopup('Lütfen tüm alanları doldurun.', 'error');
+                    return;
+                }
+                
+                // Проверка email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    showPopup('Lütfen geçerli bir email adresi girin.', 'error');
+                    return;
+                }
+                
+                // Проверка телефона (базовая)
+                const phoneRegex = /^\+?[0-9\s\-\(\)]{10,}$/;
+                if (!phoneRegex.test(phone)) {
+                    showPopup('Lütfen geçerli bir telefon numarası girin.', 'error');
+                    return;
+                }
+                
+                // Успешная отправка
+                showPopup('Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.', 'success');
+                
+                // Очистка формы
+                document.getElementById('contactForm').reset();
+            }
+            
+            function showPopup(message, type) {
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 9999;
+                `;
+                
+                const popup = document.createElement('div');
+                const bgColor = type === 'success' ? '#28a745' : '#dc3545';
+                const icon = type === 'success' ? '✓' : '✗';
+                
+                popup.style.cssText = `
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    width: 90%;
+                    max-width: 400px;
+                    text-align: center;
+                    border-top: 5px solid ${bgColor};
+                `;
+                
+                popup.innerHTML = `
+                    <div style="font-size: 48px; color: ${bgColor}; margin-bottom: 15px;">${icon}</div>
+                    <h3 style="color: ${bgColor}; margin-bottom: 15px;">${type === 'success' ? 'Başarılı!' : 'Hata!'}</h3>
+                    <p style="color: #666; margin-bottom: 20px;">${message}</p>
+                    <button onclick="closePopup()" 
+                            style="background: ${bgColor}; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                        Tamam
+                    </button>
+                `;
+                
+                modal.appendChild(popup);
+                document.body.appendChild(modal);
+                
+                // Автозакрытие через 5 секунд для успешных сообщений
+                if (type === 'success') {
+                    setTimeout(() => {
+                        closePopup();
+                    }, 5000);
+                }
+            }
+            
+            function closePopup() {
+                const modal = document.querySelector('div[style*="position: fixed"]');
+                if (modal) {
+                    modal.remove();
+                }
+            }
         </script>
     </body>
 </html>

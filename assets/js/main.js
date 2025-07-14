@@ -357,9 +357,11 @@ $('.popup-video').magnificPopup({
 });
 $('.cinkes_free_consultaion_wrapper select, .cinkes_contact_form select').niceSelect();
 // data background
-$("[data-background").each(function(){
-	$(this).css("background-image","url("+$(this).attr("data-background") + ") ")
-})
+$("[data-background]").each(function(){
+    var bgUrl = $(this).attr("data-background");
+    $(this).css("background-image","linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("+bgUrl+")");
+});
+
 // data width
 $("[data-width]").each(function(){
 	$(this).css("width",$(this).attr("data-width"))

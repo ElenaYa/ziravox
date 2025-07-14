@@ -9315,7 +9315,7 @@ blockquote p {
   top: 50%;
   transition: all 0.3s;
   transform: translateY(-50%);
-  width: 36px;
+  width: 28px;
   height: 70px;
   border-radius: 18px;
   z-index: 999;
@@ -9327,8 +9327,8 @@ blockquote p {
 }
 .cinkes-dark-light-view-box .cinkes-dark-light-view-toogle-dot {
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   transition: all 0.3s;
   background: #fff;
   border-radius: 50%;
@@ -9379,5 +9379,6 @@ blockquote p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/bg/breadcrumb_bg.jpg');
 }
 

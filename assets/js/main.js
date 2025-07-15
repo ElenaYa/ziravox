@@ -1,7 +1,6 @@
 (function ($) {
 "use strict";
 
-// meanmenu
 $('#mobile-menu').meanmenu({
 	meanMenuContainer: '.mobile_menu',
 	meanScreenWidth: "991"
@@ -16,7 +15,6 @@ $(window).on('scroll', function () {
 	}
 });
 
-//mobile side menu
 $('.side-toggle').on('click', function () {
 	$('.side-info').addClass('info-open');
 	$('.offcanvas-overlay').addClass('overlay-open');
@@ -27,9 +25,7 @@ $('.side-info-close,.offcanvas-overlay').on('click', function () {
 	$('.offcanvas-overlay').removeClass('overlay-open');
 })
 	
-/*------------------------------------
- Magic Curson
---------------------------------------*/
+
 
 $('.admin-cursor-magic').on('click', function() {
 	$('.mouse-cursor-invisible').addClass('visible');
@@ -42,13 +38,10 @@ $('.admin-cursor-default').on('click', function() {
 
 
 function sliderActive() {
-	/*------------------------------------
-	Slider
-	--------------------------------------*/
+	
 	if (jQuery(".slider-active").length > 0) {
 		let sliderActive1 = '.slider-active';
 		let sliderInit1 = new Swiper(sliderActive1, {
-			// Optional parameters
 			slidesPerView: 1,
 			rtl: false,
 			slidesPerColumn: 1,
@@ -60,13 +53,11 @@ function sliderActive() {
 				delay: 5000,
 			},
 
-			// If we need pagination
 	        pagination: {
 				el: ".cinkes-swiper-pagination",
 				clickable: true,
 			},
 
-			// Navigation arrows
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
@@ -96,7 +87,6 @@ function sliderActive() {
 				});
 			};
 			animated();
-			// Make animated when slide change
 			init.on('slideChange', function () {
 				$(sliderActive1 + ' [data-animation]').removeClass('animated');
 			});
@@ -146,7 +136,6 @@ function projectSlider() {
 
 
 
-// cinkes_testimonial_spage_active
 
 function testimonialActive() {
 	const cinkes_testimonial_spage_active = new Swiper(".cinkes_testimonial_spage_active", {
@@ -178,12 +167,10 @@ function testimonialActive() {
 
 
  function recentProjectActive() {
- 	 // portfolio details
 	  if (jQuery(".recent-project-active-1").length > 0) {
 		let swiperrecent = new Swiper('.recent-project-active-1', {
 			slidesPerView: 3,
 			spaceBetween: 5,
-			// direction: 'vertical',
 			loop: true,
 			centeredSlides: true,
 			rtl: false,
@@ -193,19 +180,16 @@ function testimonialActive() {
 				delay: 2000,
 			},
 
-			// If we need pagination
 			pagination: {
 				el: '.recent-swiper-pagination',
 				clickable: true,
 			},
 
-			// Navigation arrows
 			navigation: {
 				nextEl: '.recent-swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
 
-			// And if we need scrollbar
 			scrollbar: {
 				el: '.recent-scrollbar',
 				dynamicBullets: true,
@@ -231,7 +215,6 @@ function testimonialActive() {
 		});}}
 
 
-// Active Odometer Counter 
 jQuery('.odometer').appear(function (e) {
 	var odo = jQuery(".odometer");
 	odo.each(function () {
@@ -242,7 +225,6 @@ jQuery('.odometer').appear(function (e) {
 
 
 function sliderTestimonialActive() {
-	// Testimonial slider active
 
 	const slider_thumb = new Swiper('.cinkes_testimonial_thumbs_active', {
 		loop: true,
@@ -344,45 +326,38 @@ function CinkesVideosThumb() {
 		},
 	});
 }
-/* magnificPopup img view */
 $('.popup-image').magnificPopup({
 	type: 'image',
 	gallery: {
 	  enabled: true
 	}
 });
-/* magnificPopup video view */
 $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
 $('.cinkes_free_consultaion_wrapper select, .cinkes_contact_form select').niceSelect();
-// data background
 $("[data-background]").each(function(){
     var bgUrl = $(this).attr("data-background");
     $(this).css("background-image","linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("+bgUrl+")");
 });
 
-// data width
 $("[data-width]").each(function(){
 	$(this).css("width",$(this).attr("data-width"))
 })
-// data background color
 $("[data-bg-color]").each(function(){
 	$(this).css("background-color",$(this).attr("data-bg-color"))
 })
 
-// isotop
 if (jQuery(".filter-wrapper").length > 0) {
     $('.filter-wrapper .filter-grid').imagesLoaded(function () {
         let $grid = $('.filter-wrapper .filter-grid').isotope({
             itemSelector: '.grid-item',
             percentPosition: true,
             masonry: {
-                columnWidth: '.grid-item' // columnWidth: 1
+                columnWidth: '.grid-item' 
             }
         });
 
-        // filter items on button click
         $('.filter-nav').on('click', 'button', function () {
             let filterValue = $(this).attr('data-filter');
             $grid.isotope({filter: filterValue});
@@ -391,7 +366,6 @@ if (jQuery(".filter-wrapper").length > 0) {
     });
 }
 
-//for menu active class
 $('.portfolio_nav button').on('click', function(event) {
 	$(this).siblings('.active').removeClass('active');
 	$(this).addClass('active');
@@ -399,19 +373,17 @@ $('.portfolio_nav button').on('click', function(event) {
 });
 
 
-// scrollToTop
 $.scrollUp({
-	scrollName: 'scrollUp', // Element ID
-	topDistance: '300', // Distance from top before showing element (px)
-	topSpeed: 300, // Speed back to top (ms)
-	animation: 'fade', // Fade, slide, none
-	animationInSpeed: 200, // Animation in speed (ms)
-	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
-	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+	scrollName: 'scrollUp', 
+	topDistance: '300', 
+	topSpeed: 300, 
+	animation: 'fade', 
+	animationInSpeed: 200, 
+	animationOutSpeed: 200, 
+	scrollText: '<i class="icofont icofont-long-arrow-up"></i>',
+	activeOverlay: false,
 });
 
-// WOW active
 new WOW().init();
 
 var navexpander = $('#nav-expander, #nav-expander2');
@@ -441,9 +413,7 @@ CinkesVideosThumb();
 
 
 
-// cursor js
 
- // 11. Mouse Custom Cursor
 function itCursor() {
     var myCursor = jQuery(".mouseCursor");
     if (myCursor.length) {

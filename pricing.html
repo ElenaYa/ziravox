@@ -7,10 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-        <!-- Place favicon.png in the root directory -->
         <meta name="robots" content="index, follow">
 
-		<!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
         <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -38,7 +36,6 @@
             <div class="mouseCursor cursor-outer"></div>
             <div class="mouseCursor cursor-inner"></div>
         </div>
-        <!-- header_area-start -->
         <header>
             <div class="cinkes_header_area">
                 <div class="cinkes_header_top_area cinkes_black d-none d-lg-block">
@@ -120,10 +117,7 @@
                 </div>
             </div>
         </header>
-        <!-- header_area-end -->
-   
-
-        <!-- sidebar-expand-start -->
+      
         <nav class="right_menu_togle">
 
             <div class="offset-widget offset-logo mb-30 pb-20">
@@ -151,8 +145,7 @@
 
         </nav>
         <div class="offwrap"></div>
-        <!-- sidebar-expand-end -->
-   <!-- cinkes_breadcrumb_area-start -->
+     
    <div class="cinkes_breadcrumb_area pt-230 pb-240" data-background="assets/img/bg/breadcrumb_bg.jpg">
     <div class="cinkes_breadcrumb_content">
         <div class="container">
@@ -171,9 +164,7 @@
        
     </div>
 </div>
-<!-- cinkes_breadcrumb_area-end -->
 
-        <!-- cinkes_pricing_plan_area-start -->
         <div class="cinkes_pricing_plan_area pricing_bg pt-115 pb-120" data-background="assets/img/bg/zebra_bg.jpg">
             <div class="container">
                 <div class="row">
@@ -404,9 +395,7 @@
                 </div>
              </div>
         </div>
-         <!-- cinkes_pricing_plan_area-end -->
-
-              <!-- working_area-start -->
+    
         <div class="cinkes_working_process_area gray_bg pt-115 pb-90">
             <div class="container">
                 <div class="row">
@@ -466,9 +455,7 @@
                 </div>
             </div>
         </div>
-        <!-- working_area-end -->
-
-        <!-- cinkes_cta_area-start -->
+      
         <div class="cinkes_cta_area pt-120 pb-90" data-background="assets/img/bg/cta_bg.jpg">
             <div class="container">
                 <div class="row align-items-center">
@@ -486,9 +473,7 @@
                 </div>
             </div>
         </div>
-        <!-- cinkes_cta_area-end -->
-
-       <!-- cinkes_footer_area-start -->
+    
        <div class="cinkes_footer_area">
            
         <div class="cinkes_footer_widget_area pt-45">
@@ -558,21 +543,17 @@
             </div>
         </div>
     </div>
-    <!-- cinkes_footer_area-end -->
-         <!-- dark light view area start -->
+
          <div class="cinkes-dark-light-view-box has-clicked">
             <div class="cinkes-dark-light-view-toogle-dot"></div>
         </div>
-        <!-- dark light view area end -->
-        <!-- back to top start -->
+    
         <div class="progress-wrap">
             <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
             </svg>
         </div>
-        <!-- back to top end -->
-
-		<!-- JS here -->
+      
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/swipper-bundle.min.js"></script>
@@ -588,7 +569,6 @@
         <script src="assets/js/admin.js"></script>
         <script>
             function openWhatsAppForm() {
-                // Создаем модальное окно
                 const modal = document.createElement('div');
                 modal.style.cssText = `
                     position: fixed;
@@ -603,7 +583,6 @@
                     z-index: 9999;
                 `;
                 
-                // Создаем форму
                 const form = document.createElement('div');
                 form.style.cssText = `
                     background: white;
@@ -643,7 +622,6 @@
                 modal.appendChild(form);
                 document.body.appendChild(modal);
                 
-                // Фокус на первое поле
                 setTimeout(() => {
                     document.getElementById('whatsappName').focus();
                 }, 100);
@@ -658,7 +636,6 @@
                     return;
                 }
                 
-                // Здесь можно добавить отправку данных на сервер
                 alert(`Teşekkürler ${name}! En kısa sürede ${phone} numarasından sizinle iletişime geçeceğiz.`);
                 closeWhatsAppForm();
             }
@@ -670,14 +647,12 @@
                 }
             }
             
-            // Закрытие по клику вне формы
             document.addEventListener('click', function(e) {
                 if (e.target.style && e.target.style.position === 'fixed') {
                     closeWhatsAppForm();
                 }
             });
             
-            // Обработка контактной формы
             function handleContactForm(event) {
                 event.preventDefault();
                 
@@ -687,12 +662,10 @@
                 const subject = document.getElementById('contactSubject').value;
                 const message = document.getElementById('contactMessage').value.trim();
                 
-                // Сброс подсветки ошибок
                 resetFieldErrors();
                 
                 let hasErrors = false;
                 
-                // Валидация обязательных полей
                 if (!name) {
                     highlightFieldError('contactName');
                     hasErrors = true;
@@ -717,24 +690,20 @@
                     return;
                 }
                 
-                // Проверка email
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(email)) {
                     highlightFieldError('contactEmail');
                     return;
                 }
                 
-                // Проверка телефона (базовая)
                 const phoneRegex = /^\+?[0-9\s\-\(\)]{10,}$/;
                 if (!phoneRegex.test(phone)) {
                     highlightFieldError('contactPhone');
                     return;
                 }
                 
-                // Успешная отправка
                 showPopup('Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.', 'success');
                 
-                // Очистка формы
                 document.getElementById('contactForm').reset();
             }
             
@@ -799,7 +768,6 @@
                 modal.appendChild(popup);
                 document.body.appendChild(modal);
                 
-                // Автозакрытие через 5 секунд для успешных сообщений
                 if (type === 'success') {
                     setTimeout(() => {
                         closePopup();

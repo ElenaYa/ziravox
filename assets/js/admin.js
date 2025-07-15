@@ -11,7 +11,6 @@ var borderTopColor = document.createElement('style');
 var borderBottomColor = document.createElement('style');
 var borderColor = document.createElement('style');
 
-// Get select element
 var colorDomSelect = document.getElementById('admin-color-select');
 
 if (colorDomSelect) {
@@ -26,25 +25,21 @@ if (colorDomSelect) {
         borderColor.innerHTML = `${borderColorVal.join(', ')} { border-color: ${color}; }`;
     });
 
-    // Load from localStorage
     const colorFormLocalStorage = localStorage.getItem('Pcolor') || '#8a2be2';
     colorDomSelect.value = colorFormLocalStorage;
 
-    // Apply stored color styles
     bgcolor.innerHTML = `${bgColorVal.join(', ')} { background-color: ${colorFormLocalStorage}; }`;
     normalColor.innerHTML = `${normalColorVal.join(', ')} { color: ${colorFormLocalStorage}; }`;
     borderTopColor.innerHTML = `${borderTopColorVal.join(', ')} { border-top-color: ${colorFormLocalStorage}; }`;
     borderBottomColor.innerHTML = `${borderBottomColorVal.join(', ')} { border-bottom-color: ${colorFormLocalStorage}; }`;
     borderColor.innerHTML = `${borderColorVal.join(', ')} { border-color: ${colorFormLocalStorage}; }`;
 
-    // Append styles to document
     document.body.appendChild(bgcolor);
     document.body.appendChild(normalColor);
     document.body.appendChild(borderTopColor);
     document.body.appendChild(borderBottomColor);
     document.body.appendChild(borderColor);
 
-    // Reset button handler
     $('.admin-color-btn-reset').on('click', function () {
         const defaultColor = '#F94D1C';
         localStorage.setItem('Pcolor', defaultColor);
@@ -53,7 +48,6 @@ if (colorDomSelect) {
     });
 }
 
-// Side admin panel open/close
 (function($) {
     $('.side-admin-settings').on('click', function() {
         $('.side-admin-panel-right').addClass('side-admin-panel-visible');

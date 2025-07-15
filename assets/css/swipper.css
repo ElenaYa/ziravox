@@ -1,14 +1,4 @@
-/**
- * Swiper 6.5.0
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * https://swiperjs.com
- *
- * Copyright 2014-2021 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: March 5, 2021
- */
+
 
  @font-face {
     font-family: 'swiper-icons';
@@ -26,7 +16,6 @@
     overflow: hidden;
     list-style: none;
     padding: 0;
-    /* Fix of Webkit flickering */
     z-index: 1;
   }
   .swiper-container-vertical > .swiper-wrapper {
@@ -72,7 +61,6 @@
   .swiper-slide-invisible-blank {
     visibility: hidden;
   }
-  /* Auto Height */
   .swiper-container-autoheight,
   .swiper-container-autoheight .swiper-slide {
     height: auto;
@@ -81,7 +69,6 @@
     align-items: flex-start;
     transition-property: transform, height;
   }
-  /* 3D Effects */
   .swiper-container-3d {
     perspective: 1200px;
   }
@@ -118,13 +105,10 @@
   .swiper-container-3d .swiper-slide-shadow-bottom {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   }
-  /* CSS Mode */
   .swiper-container-css-mode > .swiper-wrapper {
     overflow: auto;
     scrollbar-width: none;
-    /* For Firefox */
     -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
   }
   .swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {
     display: none;
@@ -218,7 +202,6 @@
   .swiper-pagination.swiper-pagination-hidden {
     opacity: 0;
   }
-  /* Common Styles */
   .swiper-pagination-fraction,
   .swiper-pagination-custom,
   .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -226,7 +209,6 @@
     left: 0;
     width: 100%;
   }
-  /* Bullets */
   .swiper-pagination-bullets-dynamic {
     overflow: hidden;
     font-size: 0;
@@ -309,7 +291,6 @@
   .swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transition: 200ms transform, 200ms right;
   }
-  /* Progress */
   .swiper-pagination-progressbar {
     background: rgba(0, 0, 0, 0.25);
     position: absolute;
@@ -350,7 +331,6 @@
   .swiper-pagination-lock {
     display: none;
   }
-  /* Scrollbar */
   .swiper-scrollbar {
     border-radius: 10px;
     position: relative;
@@ -406,11 +386,8 @@
   .swiper-slide-zoomed {
     cursor: move;
   }
-  /* Preloader */
   :root {
-    /*
-    --swiper-preloader-color: var(--swiper-theme-color);
-    */
+   
   }
   .swiper-lazy-preloader {
     width: 42px;

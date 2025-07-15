@@ -206,7 +206,6 @@ label {
   text-shadow: none;
 }
 
-/* <<<<<<<    Input Placeholder   >>>>>>>>> */
 input::-webkit-input-placeholder {
   color: #878c8f;
   font-size: 16px;
@@ -261,7 +260,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   opacity: 0;
 }
 
-/* <<<<<<<    Common Classes   >>>>>>>>> */
 .fix {
   overflow: hidden;
 }
@@ -286,7 +284,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 100%;
 }
 
-/* <<<<<<<    Overlay   >>>>>>>>> */
 [data-overlay] {
   position: relative;
   background-size: cover;
@@ -350,7 +347,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   opacity: 0.9;
 }
 
-/* <<<<<<<    Margin & Padding     >>>>>>>>> */
 .mt-5 {
   margin-top: 5px;
 }
@@ -1631,9 +1627,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding-right: 200px;
 }
 
-/*---------------------------------------------------*/
-/*  mouse cursor animation
-/*---------------------------------------------------*/
+
 .mouseCursor {
   position: fixed;
   left: 0;
@@ -2091,7 +2085,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 
-/* sidebar & search css */
 .contact-list.mobile_contact h4 {
   color: #fff;
   font-size: 22px;
@@ -2348,7 +2341,6 @@ body.nav-expanded .offwrap {
   z-index: 4;
 }
 
-/* Transparent Header */
 .header-transparent {
   position: absolute;
   left: 0;
@@ -3231,7 +3223,6 @@ body.nav-expanded .offwrap {
   background-color: #8a2be2;
 }
 
-/* service 2 */
 .pt-240 {
   padding-top: 240px;
 }
@@ -3394,7 +3385,6 @@ body.nav-expanded .offwrap {
   color: #8a2be2;
 }
 
-/*  Service Details  */
 .trans_pt-340 {
   padding-top: 340px;
 }
@@ -3864,7 +3854,6 @@ body.nav-expanded .offwrap {
   letter-spacing: 0px;
 }
 
-/* About area 2 css  */
 .cinkes_countup_item {
   display: flex;
   padding: 20px;
@@ -4293,7 +4282,6 @@ body.nav-expanded .offwrap {
   width: 265px;
 }
 
-/* Work service css */
 .cinkes_service_work {
   background-color: #fff;
   padding: 40px 35px;
@@ -4692,7 +4680,6 @@ span.cinkes_project_details_meta_subtext {
   justify-content: space-between;
 }
 
-/* Project details page css */
 .cinkes-single-recent-project-box-1 {
   position: relative;
 }
@@ -4884,7 +4871,6 @@ span.cinkes_project_details_meta_subtext {
   }
 }
 
-/* Project variations CSS */
 .item_cat {
   display: inline-block;
   text-decoration: none;
@@ -5499,7 +5485,6 @@ span.cinkes_project_details_meta_subtext {
   }
 }
 
-/* team style 2 css */
 .cinkes_team_member_single-2 .img_effect_white {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -6070,7 +6055,6 @@ span.cinkes_project_details_meta_subtext {
   opacity: 1;
 }
 
-/* test */
 .bg_white {
   background-color: #fff;
 }
@@ -6272,7 +6256,6 @@ span.cinkes_project_details_meta_subtext {
   padding-top: 40px;
 }
 
-/* Testimonial Single Page */
 .cinkes_testimonial_spage_wrapper {
   box-shadow: 0px 0px 70px 0px rgba(23, 44, 221, 0.08);
   background-color: #fff;
@@ -6635,7 +6618,6 @@ a.cinkes_blog_meta:hover {
   }
 }
 
-/* Blog details */
 .cinkes_blog_content_img {
   margin-bottom: 40px;
 }
@@ -7416,7 +7398,6 @@ a.cinkes_blog_meta:hover {
   color: #fff;
 }
 
-/* pulse btn */
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
@@ -7619,7 +7600,6 @@ blockquote p {
   filter: grayscale(90%);
 }
 
-/* Blog 2 css  */
 .cinkes_blog2_single_content {
   background-color: #f1f3f2;
 }

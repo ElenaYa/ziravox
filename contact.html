@@ -295,7 +295,7 @@
                                         <textarea name="message" id="contactMessage" cols="30" rows="10" placeholder="Mesajınız" required></textarea>
                                         <button type="submit" class="cinkes_submit_btn i_right">Mesaj Gönder <i class="fal fa-plus"></i></button>
                                     </div>
-                                    
+                                    <input type="hidden" id="gclidField" name="gclid">
                                 </div>
                             </form>
                         </div>
@@ -659,6 +659,7 @@
                 const phone = document.getElementById('contactPhone').value.trim();
                 const subject = document.getElementById('contactSubject').value;
                 const message = document.getElementById('contactMessage').value.trim();
+                const gclid = document.getElementById('gclidField').value; // Получаем gclid
                 
                 // Сброс подсветки ошибок
                 resetFieldErrors();
@@ -787,5 +788,31 @@
                 }
             }
         </script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+  function getParam(name) {
+    const url = new URL(window.location.href);
+    return url.searchParams.get(name);
+  }
+  var gclid = getParam('gclid');
+  var gclidField = document.getElementById('gclidField');
+  if (gclid && gclidField) {
+    gclidField.value = gclid;
+  }
+});
+</script>
+<div id="cookieConsentBanner" style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;padding:20px 10px;z-index:99999;display:none;box-shadow:0 -2px 10px rgba(0,0,0,0.1);text-align:center;">
+  Bu site, deneyiminizi geliştirmek için çerezleri kullanır. <a href="cookies.html" style="color:#8a2be2;text-decoration:underline;">Daha fazla bilgi</a>
+  <button id="cookieAcceptBtn" style="margin-left:20px;padding:8px 18px;background:#8a2be2;color:#fff;border:none;border-radius:5px;cursor:pointer;">Kabul Et</button>
+  <button id="cookieDeclineBtn" style="margin-left:10px;padding:8px 18px;background:#666;color:#fff;border:none;border-radius:5px;cursor:pointer;">Reddet</button>
+</div>
+<script>
+function setCookie(name,value,days){var d=new Date();d.setTime(d.getTime()+(days*24*60*60*1000));var expires="expires="+d.toUTCString();document.cookie=name+"="+value+";"+expires+";path=/";}
+function getCookie(name){var n=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i].trim();if(c.indexOf(n)==0)return c.substring(n.length,c.length);}return "";}
+function showCookieBanner(){if(getCookie('ziravox_cookie_consent')==="")document.getElementById('cookieConsentBanner').style.display='block';}
+document.getElementById('cookieAcceptBtn').onclick=function(){setCookie('ziravox_cookie_consent','accepted',365);document.getElementById('cookieConsentBanner').style.display='none';};
+document.getElementById('cookieDeclineBtn').onclick=function(){setCookie('ziravox_cookie_consent','declined',365);document.getElementById('cookieConsentBanner').style.display='none';};
+window.addEventListener('DOMContentLoaded',showCookieBanner);
+</script>
     </body>
 </html>

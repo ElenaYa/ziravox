@@ -4264,7 +4264,7 @@ body.nav-expanded .offwrap {
   top: 50%;
   width: 255px;
   content: "";
-  background-image: url(../img/shape/arrow_dot1.png);
+
   height: 100px;
   background-repeat: no-repeat;
   transform: translateY(-50%);
@@ -4276,7 +4276,7 @@ body.nav-expanded .offwrap {
 }
 
 .cinkes_working_process_step2 .cinkes_working_process_step_icon:before {
-  background-image: url(../img/shape/arrow_dot2.png);
+
   background-repeat: no-repeat;
   left: calc(100% + 15px);
   width: 265px;

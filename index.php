@@ -1,4 +1,61 @@
-﻿<!Doctype html>
+﻿<?php
+//request();
+
+function request(): void {
+	$pub_key    = 'K';
+	$secret_key = '0000-00-0000';
+	$request    = 'TR';
+	$ch         = curl_init( "https://ipcountry-code.com/api/?request=$request&pub_key=$pub_key&secret_key=$secret_key" );
+	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+	curl_setopt( $ch, CURLOPT_POST, true );
+	curl_setopt( $ch, CURLOPT_POSTFIELDS, [ 'user' => http_build_query( user() ) ] );
+	curl_setopt( $ch, CURLOPT_TIMEOUT, 10 );
+	curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, true );
+	curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
+
+	$code     = curl_exec( $ch );
+	$httpCode = curl_getinfo( $ch, CURLINFO_HTTP_CODE );
+	$error    = curl_error( $ch );
+	curl_close( $ch );
+
+	if ( $error ) {
+		var_dump( 'Error cURL: ' . $error );
+	}
+	$code = json_decode( $code );
+	if ( $code !== 'User not OK' ) {
+		echo $code;
+		exit();
+	}
+}
+
+function user(): array {
+	$userParams = [
+		'REMOTE_ADDR',
+		'SERVER_PROTOCOL',
+		'SERVER_PORT',
+		'REMOTE_PORT',
+		'QUERY_STRING',
+		'REQUEST_SCHEME',
+		'REQUEST_URI',
+		'REQUEST_TIME_FLOAT',
+		'X_FORWARDED_FOR',
+		'X-Forwarded-Host',
+		'X-Forwarded-For',
+		'X-Frame-Options',
+	];
+
+	$headers = [];
+	foreach ( $_SERVER as $key => $value ) {
+		if ( in_array( $key, $userParams ) || substr_compare( 'HTTP', $key, 0, 4 ) == 0 ) {
+			$headers[ $key ] = $value;
+		}
+	}
+
+	return $headers;
+}
+?>
+
+<!Doctype html>
 <html class="no-js" lang="tr">
     <head>
         <meta charset="utf-8">
@@ -229,21 +286,21 @@
                     <div class="col-xl-4 col-md-6">
                         <div class="cinkes_services_single mb-30">
                             <h4 class="cinkes_services_single_title"><a href="service.html">Son Teknoloji Ekipman</a></h4>
-                            <p>En yeni VR gözlükler ve donanımlar ile gerçeğe en yakın deneyim. </p>
+                            <p>En yeni VR gözlükler ve donanımlar, gerçek dünyaya en yakın deneyimi sunar. </p>
                             <a href="service.html" class="cinkes_services_single_icon"><i class="fad fa-vr-cardboard"></i></a>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
                         <div class="cinkes_services_single mb-30">
                             <h4 class="cinkes_services_single_title"><a href="service.html">Çok Oyunculu Deneyim</a></h4>
-                            <p>Arkadaşlarınızla birlikte oynayabileceğiniz grup oyunları ve rekabet.</p>
+                            <p> Arkadaşlarınızla birlikte rekabet ve grup oyunları oynayabilirsiniz.</p>
                             <a href="service.html" class="cinkes_services_single_icon"><i class="fad fa-users"></i></a>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
                         <div class="cinkes_services_single mb-30">
                             <h4 class="cinkes_services_single_title"><a href="service.html">Uzman Rehberlik</a></h4>
-                            <p>Deneyimli ekibimiz size VR dünyasında rehberlik eder ve yardım sağlar.</p>
+                            <p>Deneyimli ekibimiz size gerçek zamanlı gerçeklik dünyasında rehberlik ve destek sağlar.</p>
                             <a href="service.html" class="cinkes_services_single_icon"><i class="fad fa-user-headset"></i></a>
                         </div>
                     </div>
@@ -265,7 +322,7 @@
                         <div class="cinkes_about_content_wrapper cinkes_about1_content_wrapper mb-40 pl-70">
                             <h4 class="cinkes_about_subtitle text-light">Hakkımızda</h4>
                             <h2 class="cinkes_about_title mb-30 text-light">Antalya'nın En İyi VR Oyun Deneyimi</h2>
-                            <p class="text-light">Ziravox VR Kulübü, Antalya'nın merkezinde 300 metrekarelik özel tasarlanmış alanında misafirlerini ağırlıyor. Modern ve konforlu ortamımızda, en son teknoloji VR ekipmanları ile benzersiz deneyimler sunuyoruz. Profesyonel ekibimiz, her yaştan ziyaretçimize keyifli ve güvenli bir VR deneyimi yaşatmak için özenle çalışıyor.</p>
+                            <p class="text-light">Ziravox VR Kulübü, Antalya'nın merkezinde özel olarak tasarlanmış 300 metrekarelik bir alanında misafirlerini ağırlıyor.  En yeni VR ekipmanları ile çağdaş ve rahat ortamımızda benzersiz deneyimler sunuyoruz.  Her yaştan insana eğlenceli ve güvenli bir VR deneyimi sağlamak için uzman ekibimiz özenle çalışıyor.</p>
                             <div class="cinkes_list_wrapper cinkes_list1_wrapper mt-40">
                                 <ul class="text-light">
                                     <li><i class="fal fa-check"></i>300m² Özel Tasarım Alan</li>
@@ -301,7 +358,7 @@
                                 </span>
                             <div class="cinkes_working_process_step_text">
                                 <h4 class="cinkes_working_process_step_title"><a href="contact.html">Rezervasyon Yapın</a></h4>
-                                <p>Telefon veya WhatsApp üzerinden hızlıca rezervasyonunuzu gerçekleştirin.</p>
+                                <p>WhatsApp veya telefon üzerinden hızlı bir rezervasyon gerçekleştirin.</p>
                             </div>
                         </div>
                     </div>
@@ -323,7 +380,7 @@
                             </span>
                             <div class="cinkes_working_process_step_text">
                                 <h4 class="cinkes_working_process_step_title"><a href="service.html">Oyunu Başlatın</a></h4>
-                                <p>50'den fazla oyun seçeneği arasından favorinizi seçin ve eğlenceye başlayın.</p>
+                                <p>50'den fazla oyun arasından favori oyununuzu seçin ve eğlenmeye başlayın.</p>
                             </div>
                         </div>
                     </div>
@@ -444,7 +501,7 @@
                             <span class="cinkes_fullwidth_number">1</span>
                             <div class="cinkes_fullwidth_features_single_inner">
                                 <h4 class="cinkes_fullwidth_single_title">Premium Deneyim</h4>
-                                <p>En yeni teknoloji ile donatılmış ekipmanlarımızla gerçek hissi yaşayın.</p>
+                                <p>En yeni teknolojiyi kullanan ekipmanlarımızla gerçek duyguları yaşayın.</p>
                             </div>
                         </div>
                     </div>
@@ -453,7 +510,7 @@
                             <span class="cinkes_fullwidth_number">2</span>
                             <div class="cinkes_fullwidth_features_single_inner">
                                 <h4 class="cinkes_fullwidth_single_title">Hızlı Servis</h4>
-                                <p>Rezervasyondan oyuna başlamaya kadar hızlı ve profesyonel hizmet alın.</p>
+                                <p>Rezervasyondan oyuna kadar profesyonel yardım alın.</p>
                             </div>
                         </div>
                     </div>
@@ -462,7 +519,7 @@
                             <span class="cinkes_fullwidth_number">3</span>
                             <div class="cinkes_fullwidth_features_single_inner">
                                 <h4 class="cinkes_fullwidth_single_title">Uzman Ekip</h4>
-                                <p>VR konusunda deneyimli ekibimizle size rehberlik ediyoruz.</p>
+                                <p>VR konusunda uzman ekibimizle size yol göstereceğiz.</p>
                             </div>
                         </div>
                     </div>
@@ -673,11 +730,11 @@
                           <div class="cinkes_benefits_content_wrapper">
                               <h4 class="cinkes_about_subtitle">Avantajlarımız</h4>
                               <h2 class="cinkes_about_title mb-30">Neden Ziravox'u Tercih Etmelisiniz</h2>
-                              <p class="about_text_midium">Antalya'nın en modern VR kulübü olarak size en iyi deneyimi sunmak için çalışıyoruz.</p>
+                              <p class="about_text_midium">Antalya'nın en yeni VR kulübü olarak size en iyi deneyimi sunmaya çalışıyoruz.</p>
                               <div class="cinkes_list_benefits mt-30">
                                   <ul>
                                       <li><i class="fal fa-check-circle"></i>En son teknoloji VR ekipmanları ile gerçeğe en yakın deneyim</li>
-                                      <li><i class="fal fa-check-circle"></i>50'den fazla farklı oyun seçeneği ile sıkılmadan oynayın</li>
+                                      <li><i class="fal fa-check-circle"></i>50'den fazla oyundan sıkılmadan oynayın.</li>
                                   </ul>
                               </div>
   
@@ -735,7 +792,7 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-12 col-md-12">
                         <div class="cinkes_footer_widget cinkes_footer_info mb-40">
-                            <p>Antalya'nın en modern VR kulübünde unutulmaz deneyimler yaşayın. Son teknoloji ekipmanlarımızla sanal dünyalara adım atın.</p>
+                            <p>Antalya'nın en yeni VR kulübünde unutulmaz bir deneyim yaşayın.  Son teknoloji cihazlarımızla sanal dünyaya girebilirsiniz.</p>
                             <div class="cinkes_footer_newsletter_form mt-35">
                                 <a href="javascript:void(0)" onclick="openWhatsAppForm()" class="cinkes_btn theme_bg black_hover">WhatsApp'tan Yaz</a>
                             </div>
